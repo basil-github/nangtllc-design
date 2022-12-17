@@ -26,12 +26,24 @@ $(function () {
       event.preventDefault();
     });
   });
+
+  $(function () {
+    $(".open_nave").on("click", function (event) {
+      $("body").addClass("is-active");
+    });
+  });
+  $(function () {
+    $(".close_nave").on("click", function (event) {
+      $("body").removeClass("is-active");
+    });
+  });
+
   $(function () {
     $(document).scroll(function () {
-      if ($(this).scrollTop() >= $(".header__root").offset().top - 49) {
-        $(".header__root").css("background", "red");
+      if ($(this).scrollTop() >= 170) {
+        $(".header__root").css({"opacity":"1","height": "100%"})
       } else {
-        $(".header__root").css("background", "orange");
+        $(".header__root").css({"opacity":"0","height": "0"})
       }
     });
   });
