@@ -41,8 +41,12 @@ $(function () {
   $(function () {
     $(document).scroll(function () {
       if ($(this).scrollTop() >= 170) {
+        $(".header__inner").css({"background-color": "#ffffff"})
+         $(".header__level-one").css({"background-color": "#ffffff"})
         $(".header__root").css({"opacity":"1","height": "100%"})
       } else {
+         $(".header__inner").css({"background-color": "#5e59596b"})
+           $(".header__level-one").css({"background-color": "#5e59596b"})
         $(".header__root").css({"opacity":"0","height": "0"})
       }
     });
