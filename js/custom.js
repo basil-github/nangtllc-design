@@ -41,13 +41,13 @@ $(function () {
   $(function () {
     $(document).scroll(function () {
       if ($(this).scrollTop() >= 170) {
-        $(".header__inner").css({"background-color": "#ffffff"})
-         $(".header__level-one").css({"background-color": "#ffffff"})
-        $(".header__root").css({"opacity":"1","height": "100%"})
+        $(".header__inner").css({ "background-color": "#ffffff" })
+        $(".header__level-one").css({ "background-color": "#ffffff" })
+        $(".header__root").css({ "opacity": "1", "height": "100%", "pointer-events": "none" })
       } else {
-         $(".header__inner").css({"background-color": "#5e59596b"})
-           $(".header__level-one").css({"background-color": "#5e59596b"})
-        $(".header__root").css({"opacity":"0","height": "0"})
+        $(".header__inner").css({ "background-color": "#5e59596b" })
+        $(".header__level-one").css({ "background-color": "#5e59596b", "pointer-events": "auto" })
+        $(".header__root").css({ "opacity": "0", "height": "0" })
       }
     });
   });

@@ -15325,6 +15325,7 @@ p.field-consent span {
 .header__root {
     height: 0px;
     overflow: hidden;
+    pointer-events: none;
 
 }
 
@@ -55743,4 +55744,18 @@ body.is-active .nav-toggle:after {
 
 .nav-container .nav-toggle:after {
     box-shadow: 0 -10.3333333333px 0 0 #000;
+}
+
+.brands .brand {
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.brands .brand img {
+    min-width: 160px;
 }
