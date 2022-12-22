@@ -586,7 +586,7 @@ section p {
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #aaaaaa;
+    color: #4d4d4d;
     font-family: "Poppins", sans-serif;
 }
 
@@ -607,4 +607,42 @@ section p {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #151515;
+}
+
+.note {
+    border: 1px solid #4e595f;
+}
+
+.post-block {
+    margin-bottom: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.post-block .content {
+    padding: 20px;
+}
+
+.post-block .content h3 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.note .media-wrapper {
+    border-bottom: 1px solid #4e595f;
+}
+
+.note .excerpt h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.all-post {
+    margin-top: 50px;
+}
+
+a:hover {
+    color: #4e595f !important;
 }
