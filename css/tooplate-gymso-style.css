@@ -23,6 +23,15 @@ ul {
     padding: 0;
 }
 
+
+@media screen and (min-width: 962px) {
+    .web_head {
+        height: 80px;
+        transition: .5s;
+        overflow: hidden;
+    }
+}
+
 button,
 input,
 select,

@@ -49,6 +49,14 @@ $(function () {
         $(".header__level-one").css({ "background-color": "#5e59596b", "pointer-events": "auto", })
         $(".header__root").css({ "opacity": "0", "height": "0", "pointer-events": "none", })
       }
+      if (screen.width > 962) {
+        if ($(this).scrollTop() >= 270) {
+          $(".web_head").css({ "height": "0px" })
+        } else {
+          $(".web_head").css({ "height": "80px" })
+        }
+      }
+
     });
   });
 });
