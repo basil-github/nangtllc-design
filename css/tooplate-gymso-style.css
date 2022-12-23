@@ -55564,7 +55564,8 @@ body .overlay-set-property {
     position: absolute;
     padding: 10px 15px;
     width: 120px;
-    z-index: 1
+    z-index: 1;
+    display: none;
 }
 
 .extras li {
@@ -55607,6 +55608,7 @@ li.js-header-entry:hover .header__primary__button::after {
 li.js-header-entry:hover .extras {
     opacity: 1;
     height: fit-content;
+    display: block;
 }
 
 .menu_mob {
@@ -55708,4 +55710,87 @@ body.is-active .nav-toggle:after {
 
 .brands .brand img {
     min-width: 160px;
+}
+
+.section-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-hero .h1 {
+    font-size: 20vmin;
+    line-height: 0.9;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px #1a1423;
+}
+
+.section-hero .hero-title-clone {
+    position: absolute;
+    /**
+    * You can optionally apply 
+    * initial top & left values
+    * that will be overriden through JS
+    */
+    /*top: 0;
+  left: 0;*/
+    color: var(--salmon);
+    /*z-index: 1;*/
+}
+
+.section-hero .hero-img-wrapper {
+    position: relative;
+    margin-top: -10vh;
+    overflow: hidden;
+}
+
+.section-hero .hero-img-wrapper img {
+    border-radius: 10px;
+}
+
+.section-hero~.section {
+    position: relative;
+    z-index: 2;
+}
+
+.section-text {
+    background: no-repeat fixed center right / cover;
+    margin-top: 20vh;
+}
+
+.section-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(56, 36, 52, 0.5);
+}
+
+.section-text div {
+    position: relative;
+    max-width: 700px;
+    padding: 6rem 0 0 0;
+    margin: 0 auto;
+}
+
+.section-text p {
+    margin-top: 20px;
+}
+
+.section-last {
+    text-align: center;
+    padding: 15vh 15px;
+    font-size: 5vmin;
+    line-height: 1;
+    background: var(--black);
+}
+
+.section-last p {
+    margin-top: 5px;
 }
