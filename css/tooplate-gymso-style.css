@@ -24,7 +24,7 @@ ul {
 }
 
 .hero-slider {
-    background-image: url("/images/arrival-bg-tilt.png");
+    background-image: url("/images/persona-low.webp");
     width: 100%;
     height: 100vh;
     display: -webkit-box;
@@ -32,6 +32,8 @@ ul {
     display: flex;
     position: relative;
     z-index: 0;
+    background-position: center;
+    background-size: cover;
 
 }
 
