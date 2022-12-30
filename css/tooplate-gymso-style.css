@@ -85,13 +85,6 @@ ul {
 
 .swiper-prod-prev,
 .swiper-prod-next {
-    background: transparent;
-    width: 55px;
-    height: 55px;
-    line-height: 53px;
-    text-align: center;
-    border: 2px solid #d4d3d3;
-    border-radius: 55px;
     transition: all .3s ease;
     position: absolute;
     z-index: 100;
@@ -99,18 +92,18 @@ ul {
 }
 
 .swiper-prod-prev {
-    left: 1rem;
+    left: 1.5rem;
 }
 
 .swiper-prod-next {
-    right: 1rem
+    right: 1.5rem
 }
 
 
 .swiper-prod-prev:before {
     font-family: "FontAwesome";
-    content: "\f060";
-    font-size: 15px;
+    content: "\f104";
+    font-size: 25px;
     color: #d4d3d3;
     font-style: normal;
     display: inline-block;
@@ -122,8 +115,8 @@ ul {
 
 .swiper-prod-next:before {
     font-family: "FontAwesome";
-    content: "\f061";
-    font-size: 15px;
+    content: "\f105";
+    font-size: 25px;
     color: #d4d3d3;
     font-style: normal;
     display: inline-block;
