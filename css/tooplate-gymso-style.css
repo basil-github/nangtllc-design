@@ -22,14 +22,17 @@ ul {
     list-style: none;
     padding: 0;
 }
+
 .hero-slider {
+    background-image: url("/images/arrival-bg-tilt.png");
     width: 100%;
-    height: 700px;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
     z-index: 0;
+
 }
 
 @media (max-width: 991px) {
@@ -108,7 +111,7 @@ ul {
 }
 
 .hero-slider .swiper-button-prev:before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     content: "\f060";
     font-size: 15px;
     color: #d4d3d3;
@@ -124,7 +127,7 @@ ul {
 }
 
 .hero-slider .swiper-button-next:before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     content: "\f061";
     font-size: 15px;
     color: #d4d3d3;
@@ -190,7 +193,7 @@ ul {
 	#hero-style
 --------------------------------------------------------------*/
 .hero-style {
-    height: 850px;
+    height: 100vh;
     transition: all .4s ease;
 }
 
