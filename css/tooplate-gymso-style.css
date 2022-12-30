@@ -23,6 +23,176 @@ ul {
     padding: 0;
 }
 
+.swiper-product {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-card {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+}
+
+
+.product-tumb {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.product-tumb .first {
+    opacity: 0;
+}
+
+.product-tumb .second {
+    opacity: 1;
+}
+
+.product-tumb:hover .first {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.product-tumb:hover .second {
+    opacity: 0;
+}
+
+.product-tumb img {
+    transition: 1s;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.swiper-prod-prev,
+.swiper-prod-next {
+    background: transparent;
+    width: 55px;
+    height: 55px;
+    line-height: 53px;
+    text-align: center;
+    border: 2px solid #d4d3d3;
+    border-radius: 55px;
+    transition: all .3s ease;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+}
+
+.swiper-prod-prev {
+    left: 1rem;
+}
+
+.swiper-prod-next {
+    right: 1rem
+}
+
+
+.swiper-prod-prev:before {
+    font-family: "FontAwesome";
+    content: "\f060";
+    font-size: 15px;
+    color: #d4d3d3;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+
+
+.swiper-prod-next:before {
+    font-family: "FontAwesome";
+    content: "\f061";
+    font-size: 15px;
+    color: #d4d3d3;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #5e59596b;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #5e59596b;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+
 .hero-slider {
     background-image: url("/images/persona-low.webp");
     width: 100%;
@@ -36727,7 +36897,7 @@ button.swiper-pagination-bullet {
     touch-action: pan-x
 }
 
-.swiper-slide {
+.hero-style .swiper-slide {
     flex-shrink: 0;
     height: 100%;
     position: relative;

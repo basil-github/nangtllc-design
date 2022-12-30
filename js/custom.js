@@ -39,6 +39,31 @@ $(function () {
   });
 
   $(function () {
+    const swiperPo = new Swiper('.swiper-product', {
+      speed: 400,
+      slidesPerView: 4,
+      loop: true,
+      autoplay: {
+        delay: 6500,
+        disableOnInteraction: false,
+      }, navigation: {
+        nextEl: '.swiper-prod-next',
+        prevEl: '.swiper-prod-prev',
+      },
+      spaceBetween: 10,
+      watchSlidesProgress: true,
+      breakpoints: {
+        1281: {
+          slidesPerView: 3,
+        }, 1076: {
+          slidesPerView: 2.5,
+        },
+        640: {
+          slidesPerView: 1,
+        }
+      }
+
+    });
     // HERO SLIDER
     var menu = [];
     jQuery('.swiper-slide').each(function (index) {
@@ -112,9 +137,9 @@ $(function () {
         // $(".header__level-one").css({ "background-color": "#ffffff" })
         $(".header__root").css({ "opacity": "1", "height": "100%", "pointer-events": "auto" })
       } else {
-        $(".header__outer").css({ "background-color": "#ffffff6b" })
-        // $(".header__inner").css({ "background-color": "#ffffff6b" })
-        // $(".header__level-one").css({ "background-color": "#ffffff6b", "pointer-events": "auto", })
+        $(".header__outer").css({ "background-color": "#5e59596b" })
+        // $(".header__inner").css({ "background-color": "#5e59596b" })
+        // $(".header__level-one").css({ "background-color": "#5e59596b", "pointer-events": "auto", })
         $(".header__root").css({ "opacity": "0", "height": "0", "pointer-events": "none", })
       }
       if (screen.width > 962) {
