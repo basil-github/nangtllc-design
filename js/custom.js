@@ -59,7 +59,7 @@ $(function () {
           slidesPerView: 2.5,
         },
         640: {
-          slidesPerView: 1,
+          slidesPerView: 2,
         }
       }
 
