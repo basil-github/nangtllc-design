@@ -23,6 +23,97 @@ ul {
     padding: 0;
 }
 
+.image_cards_list {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.image_cards_list_main {
+    overflow: hidden;
+}
+
+.image_cards_list_main img {
+    transition: 1s;
+}
+
+.image_cards_list_main:hover img {
+    transform: scale(2);
+
+}
+
+.image_cards_list_main:hover .list_overlay {
+    transform: scale(2);
+
+}
+
+
+.hs-responsive-embed-youtube iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    height: 60vh !important;
+}
+
+.video_player {
+    overflow: hidden;
+    height: 60vh;
+    position: relative;
+}
+
+.video_player .play_btn {
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.video_player img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal {
+    z-index: 1000000000 !important;
+}
+
+.modal-dialog {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.modal-content {
+    height: 100%;
+    background-color: black;
+}
+
+.list_overlay {
+    transition: 1s;
+    top: 0;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005e;
+}
+
 .swiper-product {
     width: 100%;
     overflow: hidden;
