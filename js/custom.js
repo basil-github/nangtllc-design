@@ -137,9 +137,9 @@ $(function () {
         // $(".header__level-one").css({ "background-color": "#ffffff" })
         $(".header__root").css({ "opacity": "1", "height": "100%", "pointer-events": "auto" })
       } else {
-        $(".header__outer").css({ "background-color": "#5e59596b" })
-        // $(".header__inner").css({ "background-color": "#5e59596b" })
-        // $(".header__level-one").css({ "background-color": "#5e59596b", "pointer-events": "auto", })
+        $(".header__outer").css({ "background-color": "#978a8a6b" })
+        // $(".header__inner").css({ "background-color": "#978a8a6b" })
+        // $(".header__level-one").css({ "background-color": "#978a8a6b", "pointer-events": "auto", })
         $(".header__root").css({ "opacity": "0", "height": "0", "pointer-events": "none", })
       }
       if (screen.width > 962) {
