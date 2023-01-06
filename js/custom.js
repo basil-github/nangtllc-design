@@ -133,13 +133,13 @@ $(function () {
     $(document).scroll(function () {
       if ($(this).scrollTop() >= 170) {
         // $(".header__inner").css({ "background-color": "#ffffff" })
-        $(".header__outer").css({ "background-color": "#ffffff" })
+        $(".header__outer").css({ "background-color": "#051f31" })
         // $(".header__level-one").css({ "background-color": "#ffffff" })
         $(".header__root").css({ "opacity": "1", "height": "100%", "pointer-events": "auto" })
       } else {
-        $(".header__outer").css({ "background-color": "#978a8a6b" })
-        // $(".header__inner").css({ "background-color": "#978a8a6b" })
-        // $(".header__level-one").css({ "background-color": "#978a8a6b", "pointer-events": "auto", })
+        $(".header__outer").css({ "background-color": "#0d1e3287" })
+        // $(".header__inner").css({ "background-color": "#0d1e3287" })
+        // $(".header__level-one").css({ "background-color": "#0d1e3287", "pointer-events": "auto", })
         $(".header__root").css({ "opacity": "0", "height": "0", "pointer-events": "none", })
       }
       if (screen.width > 962) {

@@ -366,7 +366,7 @@
 
 .contact_info_sec {
     position: absolute;
-    background-color: #2d2d2d;
+    background-color: #203331;
     color: #fff;
     right: 1px;
     top: 18%;
@@ -394,7 +394,7 @@
 }
 
 button.contact_form_submit {
-    background: linear-gradient(to top right, #9b9b9b -5%, #9b9b9b 100%);
+    background: linear-gradient(to top right, #376963 -5%, #376963 100%);
     border: none;
     color: #fff;
     padding: 10px 15px;
